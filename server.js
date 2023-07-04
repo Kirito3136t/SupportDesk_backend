@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(cors())
 
 app.get(('/'),(req,res)=>{
-    res.setHeader("Access-Controll-Allow-Credentials":"true");
+    res.setHeader("Access-Control-Allow-Credentials":"true");
     res.status(200).json({message:'Welcome to Support Desk'})
 })
 
