@@ -4,6 +4,7 @@ const colors = require('colors')
 const dotenv = require ('dotenv').config()
 const PORT = process.env.PORT || 8000
 const connectDB = require('./config/db')
+const cors=require('cors')
 const {errorHandler } = require('./middleware/errorMiddleWare')
 
 connectDB() 
